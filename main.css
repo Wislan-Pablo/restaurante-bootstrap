@@ -1,0 +1,165 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #ffeae6;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 1140px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.col {
+    padding: 0;
+}
+
+.navbar {
+    background-color: #e15f41;
+}
+
+header .nav-item {
+    margin: 0 8px 0 8px;
+}
+
+header .nav-link {
+    padding: 6px 12px;
+    border: 1px solid transparent;
+}
+
+header .nav-link:hover {
+    border: 1px solid #fff;
+}
+
+header .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: Pacifico, cursive;
+}
+
+header .nav .nav-link.active {
+    background-color: #fff;
+    color: #e15f41;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:not(.collapsed) {
+    border: 1px solid #fff !important;
+    box-shadow: none !important;
+    /* Remove o efeito de foco */
+    outline: none !important;
+    /* Remove qualquer outline do navegador */
+}
+
+.navbar-toggler-icon {
+    /* Coloca as barras do ícone na cor branca */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.content-social-links {
+    list-style: none;
+}
+
+.content-social-links li {
+    display: inline;
+}
+
+.content-social-links i {
+    color: #fff;
+}
+
+.content-social-links i:hover {
+    cursor: pointer;
+}
+
+#hero,
+#eventos,
+#cardapio {
+    scroll-margin-top: 80px;
+}
+
+.carousel-inner img {
+    max-width: 1116px;
+    width: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    margin: 0 3%;
+}
+
+h2,
+h3 {
+    font-family: Pacifico, cursive;
+}
+
+.text-color-red {
+    color: #e15f41;
+    margin-bottom: 1%;
+    display: inline-block;
+}
+
+#sobre-o-restaurante .row {
+    margin: 5% 0;
+}
+
+#sobre-o-restaurante li {
+    margin: 3% 0;
+}
+
+#sobre-o-restaurante .texto-right {
+    padding: 0 3% 0 0;
+}
+
+#sobre-o-restaurante .texto-left {
+    padding: 0 0 0 5%;
+}
+
+.nav-cardapio .nav-link {
+    color: #e15f41;
+    border: 1px solid transparent;
+}
+
+.nav-cardapio .nav-link:hover {
+    cursor: pointer;
+    color: #e15f41;
+    border: 1px solid #e15f41;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #e15f41;
+    color: #fff;
+}
+
+#contato .content-social-links i {
+    color: #e15f41;
+}
+
+.title-form {
+    text-align: center;
+    display: block;
+}
+
+.form-label {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #e15f41;
+}
+
+footer p {
+    color: #fff;
+    margin: auto auto;
+}
