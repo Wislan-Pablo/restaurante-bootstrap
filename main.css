@@ -3,6 +3,14 @@ body {
     background-color: #ffeae6;
 }
 
+.section {
+    scroll-margin-top: 70px;
+}
+
+.section #home {
+    scroll-margin-top: 0;
+}
+
 .container-menu {
     display: flex;
     align-items: center;
@@ -19,6 +27,11 @@ body {
 
 .navbar {
     background-color: #e15f41;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 header .nav-item {
@@ -39,6 +52,15 @@ header .nav-link,
 .navbar-brand:hover,
 .nav-link:hover {
     color: #fff;
+}
+
+#navMenu a {
+    color: #fff;
+}
+
+#home .nav-item a.active {
+    color: #e15f41 !important;
+    background-color: #fff !important;
 }
 
 .navbar-brand {
@@ -81,10 +103,9 @@ header .nav .nav-link.active {
     cursor: pointer;
 }
 
-#hero,
-#eventos,
-#cardapio {
-    scroll-margin-top: 80px;
+.carousel {
+    position: relative;
+    margin-top: 10vh;
 }
 
 .carousel-inner img {
@@ -107,10 +128,6 @@ h3 {
     color: #e15f41;
     margin-bottom: 1%;
     display: inline-block;
-}
-
-#sobre-o-restaurante .row {
-    margin: 5% 0;
 }
 
 #sobre-o-restaurante li {

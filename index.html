@@ -21,171 +21,169 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top py-3" id="cabecalho">
-        <div class="container">
-            <h1 class="navbar-brand section-title fs-4 mb-0"> Nosso restaurante</h1>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
-                <span class="navbar-toggler-icon"></span>
+    <section id="home" class="section">
+        <header class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <h1 class="navbar-brand section-title fs-4 mb-0"> Nosso restaurante</h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="navMenu">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link fw-bold d-flex justify-content-end w-100 fw-bold">
+                                <i class="bi bi-house-door me-2"></i>
+                                O restaurante
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#eventos" class="nav-link d-flex justify-content-end w-100 fw-bold">
+                                <i class="bi bi-calendar-check me-2"></i>
+                                Eventos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cardapio" class="nav-link d-flex justify-content-end w-100 fw-bold">
+                                <i class="bi bi-card-text me-2"></i>
+                                Cardápio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link d-flex justify-content-end w-100 fw-bold">
+                                <i class="bi bi-chat-left-text me-2"></i>
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="content-social-links py-1 mb-1 d-none d-lg-block">
+                        <li>
+                            <a href="#"><i class="bi bi-whatsapp fs-5 fw-bold"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-instagram fs-5 mx-2 fw-bold"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class=" bi bi-facebook fs-5 fw-bold"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="carousel" class="section carousel slide py-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./images/slides/slide1.png" alt="Foto do espaço interno do restaurante"
+                        class="d-block mx-auto rounded">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/slides/slide2.png" alt="Duas taças de vinho" class="d-block mx-auto rounded">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/slides/slide3.png" alt="Uma mesa com comida" class="d-block mx-auto rounded">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" class="pl-5" data-bs-target="#carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
             </button>
-            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
-                <ul class="nav nav-pills d-block d-md-flex">
-                    <li class="nav-item">
-                        <a href="#hero" class="nav-link fw-bold d-flex justify-content-end w-100 fw-bold">
-                            <i class="bi bi-house-door me-2"></i>
-                            O restaurante
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#eventos" class="nav-link d-flex justify-content-end w-100 fw-bold">
-                            <i class="bi bi-calendar-check me-2"></i>
-                            Eventos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#cardapio" class="nav-link d-flex justify-content-end w-100 fw-bold">
-                            <i class="bi bi-card-text me-2"></i>
-                            Cardápio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contato" class="nav-link d-flex justify-content-end w-100 fw-bold">
-                            <i class="bi bi-chat-left-text me-2"></i>
-                            Fale conosco
-                        </a>
-                    </li>
-                </ul>
-                <ul class="content-social-links py-1 mb-1 d-none d-lg-block">
-                    <li>
-                        <a href="#"><i class="bi bi-whatsapp fs-5 fw-bold"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-instagram fs-5 mx-2 fw-bold"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class=" bi bi-facebook fs-5 fw-bold"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="mt-5" data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-offset="100">
-        <div id="hero">
-            <section id="carousel" class="carousel slide position-relative" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="./images/slides/slide1.png" alt="Foto do espaço interno do restaurante"
-                            class="d-block mx-auto rounded">
+            <button class="carousel-control-next" type="button" class="pr-5" data-bs-target="#carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </section>
+        <section class="pt-5" id="sobre-o-restaurante">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-md-6 p-0">
+                        <img src="./images/restaurante.jpg" class="d-block w-100 rounded"
+                            alt="Foto do espaço interno do restaurante">
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./images/slides/slide2.png" alt="Duas taças de vinho" class="d-block mx-auto rounded">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./images/slides/slide3.png" alt="Uma mesa com comida" class="d-block mx-auto rounded">
+                    <div class="texto-left col-md-6">
+                        <h2>Sobre <span class="text-color-red">o restaurante</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit fuga nemo
+                            ullam
+                            distinctio tenetur maxime reprehenderit veniam quas laborum corporis dolore, quos
+                            officiis
+                            consequuntur! Laboriosam iure fuga est autem.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" class="pl-5" data-bs-target="#carousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" class="pr-5" data-bs-target="#carousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-                </div>
-            </section>
-            <section id="sobre-o-restaurante" class="pt-5">
-                <div class="container">
-                    <div class="row pb-5">
-                        <div class="col-md-6 p-0">
-                            <img src="./images/restaurante.jpg" class="d-block w-100 rounded"
-                                alt="Foto do espaço interno do restaurante">
-                        </div>
-                        <div class="texto-left col-md-6">
-                            <h2>Sobre <span class="text-color-red">o restaurante</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit fuga nemo
-                                ullam
-                                distinctio tenetur maxime reprehenderit veniam quas laborum corporis dolore, quos
-                                officiis
-                                consequuntur! Laboriosam iure fuga est autem.</p>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            </ul>
-                        </div>
+                <div class="row pb-5">
+                    <div class="texto-right col-md-6">
+                        <h2>Sobre <span class="text-color-red">o Espaço</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit fuga nemo
+                            ullam
+                            distinctio tenetur maxime reprehenderit veniam quas laborum corporis dolore, quos
+                            officiis
+                            consequuntur! Laboriosam iure fuga est autem.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
                     </div>
-                    <div class="row pb-5">
-                        <div class="texto-right col-md-6">
-                            <h2>Sobre <span class="text-color-red">o Espaço</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit fuga nemo
-                                ullam
-                                distinctio tenetur maxime reprehenderit veniam quas laborum corporis dolore, quos
-                                officiis
-                                consequuntur! Laboriosam iure fuga est autem.</p>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 p-0">
-                            <img src="./images/restaurante.jpg" class="d-block w-100 rounded"
-                                alt="Foto do espaço interno do restaurante">
-                        </div>
+                    <div class="col-md-6 p-0">
+                        <img src="./images/restaurante.jpg" class="d-block w-100 rounded"
+                            alt="Foto do espaço interno do restaurante">
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="container">
-            <section id="eventos" class="py-4">
-                <div class="row">
-                    <h2 class="section-title text-center">Para todas <span class="text-color-red">as ocasiões</span>
-                    </h2>
-                </div>
-                <div class="row my-3">
-                    <div class="col-md-4 mb-3">
-                        <img src="./images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-color-red fs-4 mt-2">
-                            <i class="bi bi-calendar-heart-fill"></i>
-                            Aniversários
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sint esse debitis in, laborum
-                            magni excepturi ab.</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <img src="./images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-color-red fs-4 mt-2">
-                            <i class="bi bi-arrow-through-heart-fill"></i>
-                            Casamentos
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sint esse debitis in, laborum
-                            magni excepturi ab.</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <img src="./images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-color-red fs-4 mt-2">
-                            <i class="bi bi-people-fill"></i>
-                            Confraternizações
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sint esse debitis in, laborum
-                            magni excepturi ab.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="container">
-            <section id="cardapio">
-                <h2 class="text-center">Nosso <span class="text-color-red">Cardápio</span></h2>
-            </section>
+            </div>
+        </section>
+    </section>
+    <div class="container">
+        <section id="eventos" class="section py-4">
+            <div class="row">
+                <h2 class="section-title text-center">Para todas <span class="text-color-red">as ocasiões</span>
+                </h2>
+            </div>
             <div class="row my-3">
+                <div class="col-md-4 mb-3">
+                    <img src="./images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-color-red fs-4 mt-2">
+                        <i class="bi bi-calendar-heart-fill"></i>
+                        Aniversários
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sint esse debitis in, laborum
+                        magni excepturi ab.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="./images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-color-red fs-4 mt-2">
+                        <i class="bi bi-arrow-through-heart-fill"></i>
+                        Casamentos
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sint esse debitis in, laborum
+                        magni excepturi ab.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="./images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-color-red fs-4 mt-2">
+                        <i class="bi bi-people-fill"></i>
+                        Confraternizações
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sint esse debitis in, laborum
+                        magni excepturi ab.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section id="cardapio" class="section py-4">
+            <h2 class="text-center">Nosso <span class="text-color-red">Cardápio</span></h2>
+            <div class="row">
                 <aside class="col-md-2">
                     <nav class="nav nav-pills flex-column nav-cardapio">
                         <button type="button" data-bs-toggle="pill" data-bs-target="#pratos-principais"
@@ -472,77 +470,77 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <section id="contato" class="py-4">
-                <div class="row py-4">
-                    <h2 class="section-title text-center">Fale <span class="text-color-red">conosco</span></h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3 class="section-title text-color-red title-form">Nos mande uma mensagem</h3>
-                        <form id="fale-conosco" action="#">
-                            <div class="py-2">
-                                <label for="nome" class="form-label fw-bold text-color-red">Seu nome</label>
-                                <input type="text" id="nome" class="form-control" required>
-                            </div>
-                            <div class="py-2">
-                                <label for="email" class="form-label fw-bold text-color-red">Seu e-mail</label>
-                                <input type="text" id="email" class="form-control" required>
-                            </div>
-                            <div class="py-2">
-                                <label for="telefone" class="form-label fw-bold text-color-red">Seu telefone</label>
-                                <input type="tel" id="telefone" class="form-control">
-                            </div>
-                            <div class="py-2">
-                                <label for="mensagem" class="form-label fw-bold text-color-red">Sua mensagem</label>
-                                <textarea id="mensagem" class="form-control" required></textarea>
-                            </div>
-                            <button type="submit" class="btn fw-bold text-color-red my-2">Enviar</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <h3 class="section-title text-color-red text-center">
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                Redes Sociais
-                            </h3>
-                            <ul class="content-social-links text-center pt-2 pb-4">
-                                <li>
-                                    <a href="#"><i class="bi bi-whatsapp fs-3 fw-bold"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="bi bi-instagram fs-3 mx-4 fw-bold"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class=" bi bi-facebook fs-3 fw-bold"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row py-4">
-                            <h3 class="section-title text-color-red text-center">
-                                <i class="bi bi-cursor-fill"></i>
-                                Endereço
-                            </h3>
-                            <p class="text-color-red text-center fw-bold fs-5 py-2">Rua Teste Exemplo nª 145, Bairro
-                                Centro -
-                                São Paulo</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer class="mt-4 py-3 w-100">
-            <div class="container">
-                <p class="text-center">&copy; Copyright Jul-2025, Pablo Souza - Todos os direitos reservados.
-                </p>
-            </div>
-        </footer>
-
+        </section>
     </div>
+    <div class="container">
+        <section id="contato" class="section py-4">
+            <div class="row pb-4">
+                <h2 class="section-title text-center">Fale <span class="text-color-red">conosco</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="section-title text-color-red title-form">Nos mande uma mensagem</h3>
+                    <form id="fale-conosco" action="#">
+                        <div class="py-2">
+                            <label for="nome" class="form-label fw-bold text-color-red">Seu nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="py-2">
+                            <label for="email" class="form-label fw-bold text-color-red">Seu e-mail</label>
+                            <input type="text" id="email" class="form-control" required>
+                        </div>
+                        <div class="py-2">
+                            <label for="telefone" class="form-label fw-bold text-color-red">Seu telefone</label>
+                            <input type="tel" id="telefone" class="form-control">
+                        </div>
+                        <div class="py-2">
+                            <label for="mensagem" class="form-label fw-bold text-color-red">Sua mensagem</label>
+                            <textarea id="mensagem" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn fw-bold text-color-red my-2">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <h3 class="section-title text-color-red text-center">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes Sociais
+                        </h3>
+                        <ul class="content-social-links text-center pt-2 pb-4">
+                            <li>
+                                <a href="#"><i class="bi bi-whatsapp fs-3 fw-bold"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-instagram fs-3 mx-4 fw-bold"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class=" bi bi-facebook fs-3 fw-bold"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row py-4">
+                        <h3 class="section-title text-color-red text-center">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço
+                        </h3>
+                        <p class="text-color-red text-center fw-bold fs-5 py-2">Rua Teste Exemplo nª 145, Bairro
+                            Centro -
+                            São Paulo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="mt-4 py-3 w-100">
+        <div class="container">
+            <p class="text-center">&copy; Copyright Jul-2025, Pablo Souza - Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script src="nav-scroller-plugin.js"></script>
 </body>
 
 </html>
