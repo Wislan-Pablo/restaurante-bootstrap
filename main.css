@@ -168,7 +168,7 @@ h3 {
 }
 
 .icon-delivery {
-    height: 48px;
+    height: 48px !important;
 }
 
 .title-form {
