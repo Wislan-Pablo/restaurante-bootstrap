@@ -172,7 +172,7 @@ h3 {
 }
 
 .icon-delivery {
-    height: 48px;
+    height: 48px !important;
 }
 
 .title-form {
@@ -194,7 +194,7 @@ footer p {
     margin: auto auto;
 }
 
-@media (max-width: 767px) {
+<<<<<<< HEAD @media (max-width: 767px) {
     .carousel-item img {
         width: 92vw;
     }
@@ -205,3 +205,5 @@ footer p {
         width: 92vw;
     }
 }
+
+=======>>>>>>>4bbb4e1a1eb8b70e9df02fc1a01ce4ff6668207c
